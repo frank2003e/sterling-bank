@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+.container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.circle {
+    width: 90px;
+    height: 90px;
+    background-color: #e30613;
+    border-radius: 50%;
+    position: relative;
+}
+.circle::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.text h1 {
+    margin-left: 10px;
+    font-size: 40px;
+    color: #58595B;
+}
